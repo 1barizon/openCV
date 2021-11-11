@@ -1,7 +1,8 @@
 import numpy as np 
 import cv2
 
-cap = cv2.VideoCapture('http://10.0.0.100:4747/video')
+# you can use your camera ip or just put 1 than the command will detect 
+cap = cv2.VideoCapture('camera ip'/ '1')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
